@@ -8,7 +8,7 @@ namespace BCQAExam.Pages
     {
         public void NavigateToHomePage()
         {
-            Driver.Navigate().GoToUrl(ConfigurationManager.AppSettings["URL"]);
+            Driver.Navigate().GoToUrl(ConfigurationManager.AppSettings["http://automationpractice.com"]);
         }
 
         private IWebElement SignInButton => Driver.FindControl(By.XPath("//a[@class='login']"));

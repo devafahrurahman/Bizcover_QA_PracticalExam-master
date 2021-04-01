@@ -17,5 +17,14 @@ namespace BCQAExam.Pages
                 Assert.AreEqual("My account", MyAccountTab.Text);
             });
         }
+
+        public void AssertAccountName2()
+        {
+            Assert.Multiple(() =>
+            {
+                Assert.AreEqual("QA Engineer", AccountName.Text);
+                Assert.AreEqual("My account", MyAccountTab.Text);
+            });
+        }
     }
 }
